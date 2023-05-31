@@ -1,9 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+    :root {
+      --blue-500: #0085FF;
+
+      --background: #FAFAFA;
+    }
+
     * {
       margin: 0;
       padding: 0;
+      list-style: none;
+      text-decoration: none;
     }
 
     html {
@@ -15,6 +23,10 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 1.8rem;
     }
 
+    button {
+      all: unset;
+    }
+    
     h1, h2, h3, a, button {
       font-weight: 600;
     }
@@ -33,6 +45,7 @@ export const GlobalStyles = createGlobalStyle`
 
     a {
       font-size: 16px;
+      cursor: pointer;
     }
 
     button {
