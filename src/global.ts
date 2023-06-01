@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
       padding: 0;
       list-style: none;
       text-decoration: none;
+      box-sizing: border-box;
     }
 
     html {
@@ -23,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 1.8rem;
     }
 
-    button {
+    button, input {
       all: unset;
     }
     
@@ -32,24 +33,57 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 4.8rem;
     }
 
     h2 {
-      font-size: 32px;
+      font-size: 3.2rem;
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 2rem;
     }
 
     a {
-      font-size: 16px;
+      font-size: 1.6rem;
       cursor: pointer;
     }
 
     button {
-      font-size: 24px;
+      font-size: 2.4rem;
     }
+
+
+
+    @media (max-width: 992px) {
+    body {
+      font-size: 1.6rem;
+    }
+
+    h1, h2, h3, a, button {
+      font-weight: 600;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    a {
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    button {
+      font-size: 1.6rem;
+    }
+  }
 
 `;
